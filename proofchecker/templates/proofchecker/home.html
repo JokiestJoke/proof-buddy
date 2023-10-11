@@ -1,6 +1,4 @@
 {% extends 'proofchecker/base.html' %} {% block content %}
-
-
     <div class="py-5 my-5 px-5 mx-5">
 
         <img src="../../../media/logos/drexel-dragon-all_blue.png" class="drexel-logo img-fluid pb-4 mb-4" alt="">
@@ -39,6 +37,12 @@
         {% endif %}
 
 
+    </div>
+
+    <div id="test">
+        <form id="testForm" onsubmit="return API.testAPIMethod()">
+            <input id="testMethodButton" type="submit" value="Test">
+        </form>
     </div>
 
 {% endblock %}
